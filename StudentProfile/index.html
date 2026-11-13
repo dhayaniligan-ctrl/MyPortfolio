@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile - Dhayan Iligan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Reusable shapes: blue flower, bow, sparkle -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="flower" viewBox="0 0 100 100">
+        <g fill="currentColor">
+          <ellipse cx="50" cy="24" rx="13" ry="22"/>
+          <ellipse cx="50" cy="24" rx="13" ry="22" transform="rotate(72 50 50)"/>
+          <ellipse cx="50" cy="24" rx="13" ry="22" transform="rotate(144 50 50)"/>
+          <ellipse cx="50" cy="24" rx="13" ry="22" transform="rotate(216 50 50)"/>
+          <ellipse cx="50" cy="24" rx="13" ry="22" transform="rotate(288 50 50)"/>
+        </g>
+        <circle cx="50" cy="50" r="9" fill="#fff6c9"/>
+        <circle cx="50" cy="50" r="4" fill="#ffd966"/>
+      </symbol>
+
+      <symbol id="bow" viewBox="0 0 100 70">
+        <path d="M50 35 C30 5 5 5 5 30 C5 58 30 62 50 35Z" fill="currentColor"/>
+        <path d="M50 35 C70 5 95 5 95 30 C95 58 70 62 50 35Z" fill="currentColor"/>
+        <circle cx="50" cy="35" r="9" fill="#ffffff" opacity=".9"/>
+      </symbol>
+
+      <symbol id="sparkle" viewBox="0 0 40 40">
+        <path d="M20 0 C22 14 26 18 40 20 C26 22 22 26 20 40 C18 26 14 22 0 20 C14 18 18 14 20 0Z" fill="currentColor"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Background decorations -->
+  <div class="decor" aria-hidden="true">
+    <svg class="flower f1"><use href="#flower"/></svg>
+    <svg class="flower f2"><use href="#flower"/></svg>
+    <svg class="flower f3"><use href="#flower"/></svg>
+    <svg class="flower f4"><use href="#flower"/></svg>
+    <svg class="flower f5"><use href="#flower"/></svg>
+    <svg class="sparkle s1"><use href="#sparkle"/></svg>
+    <svg class="sparkle s2"><use href="#sparkle"/></svg>
+    <svg class="sparkle s3"><use href="#sparkle"/></svg>
+    <svg class="sparkle s4"><use href="#sparkle"/></svg>
+  </div>
+
+  <main class="profile">
+
+    <svg class="corner-flower cf-left" aria-hidden="true"><use href="#flower"/></svg>
+    <svg class="corner-flower cf-right" aria-hidden="true"><use href="#flower"/></svg>
+
+    <div class="photo-wrap">
+      <svg class="bow" aria-hidden="true"><use href="#bow"/></svg>
+      <div class="photo-frame">
+        <img src="photo.png" alt="Photo of Dhayan Iligan">
+      </div>
+    </div>
+
+    <h1>Dhayan Iligan</h1>
+    <p class="university">Davao Oriental State University<br>Banaybanay Campus</p>
+
+    <dl class="details">
+      <div>
+        <dt>Course</dt>
+        <dd>BSIT</dd>
+      </div>
+      <div>
+        <dt>Age</dt>
+        <dd>18</dd>
+      </div>
+      <div>
+        <dt>Gender</dt>
+        <dd>Female</dd>
+      </div>
+    </dl>
+
+    <blockquote>
+      "I love my course so much mwamwah"
+    </blockquote>
+
+  </main>
+</body>
+</html>
